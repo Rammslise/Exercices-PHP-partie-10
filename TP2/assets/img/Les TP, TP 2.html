@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Les%20TP,%20TP%202_fichiers/bootstrap.css">
+        <link rel="stylesheet" href="Les%20TP,%20TP%202_fichiers/style.css">
+        <title>Les TP, TP 2</title>
+    </head>   
+    <body> 
+        <!-- Header -->
+        <header>
+            <img src="Les%20TP,%20TP%202_fichiers/header.jpg" class="img-fluid" alt="wall">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="http://phppartie10/TP2/index.php">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://phppartie10/TP1/index.php">TP 1</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://phppartie10/TP2/index.php">TP 2</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://phppartie10/TP3/index.php">TP 3</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Recherche">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Chercher</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!--Titre -->
+        <div class="form-row justify-content-center">
+            <h1>Formulaire d'inscription</h1>
+        </div>
+        <!--Partie du formulaire -->
+        <form method="POST" action="#">
+            <!--Civilité (liste déroulante) -->
+            <fieldset>
+                <div class="row justify-content-center">
+                    <div class="form-group col-4">
+                        <label for="civility">Civilité</label>
+                        <select name="civility" class="form-control">
+                            <!--Boucle pour le menu déroulant et lors de la sélection d'une civilité, on affiche le choix au rafraîchissement de la page-->
+                                                            <option value="0" disabled="disabled" selected="selected">Sélectionner</option>
+                                                            <option value="1">Mademoiselle</option>
+                                                            <option value="2">Madame</option>
+                                                            <option value="3">Monsieur</option>
+                                                    </select>
+                        <small class="text-warning">
+                            Merci de sélectionner un choix                        </small>
+                    </div>
+                </div>
+            </fieldset>
+            <!--Champs NOM -->
+            <div class="row justify-content-center">
+                <div class="form-group col-2">
+                    <label for="lastname">Nom</label>
+                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="DOE">        
+                    <small class="text-warning">
+                        Merci de remplir ce champs                    </small>
+                </div>
+                <!--Champs PRÉNOM-->
+                <div class="form-group col-2">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Jane">
+                    <small class="text-warning">
+                        Merci de remplir ce champs                    </small>
+                </div>
+            </div>
+            <!--Champs ÂGE-->
+            <div class="row justify-content-center">
+                <div class="form-group col-2">
+                    <label for="age">Âge</label>
+                    <input type="text" class="form-control" name="age" id="age" placeholder="Votre âge" value="24.5">
+                    <small class="text-warning">
+                        L'âge doit être compris entre 15 et 100 ans                    </small>
+                </div>
+                <!--Champs SOCIÉTÉ-->
+                <div class="form-group col-2">
+                    <label for="company">Société</label>
+                    <input type="text" class="form-control" name="company" id="company" placeholder="LA MANU">
+                    <small class="text-warning">
+                        Champs obligatoire                    </small>
+                </div>
+            </div>
+            <!--Bouton de validation du formulaire -->
+            <div class="row justify-content-center">
+                <input class="btn btn-primary" type="submit" name="submit" value="Envoyer">
+            </div>
+        </form>
+        <!--On intégre le php après le html du formlulaire pour le faire apparaître à la fin de ce dernier-->
+                <script src="Les%20TP,%20TP%202_fichiers/jquery-3.js"></script>
+        <script src="Les%20TP,%20TP%202_fichiers/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="Les%20TP,%20TP%202_fichiers/bootstrap.js"></script>
+        <script src="Les%20TP,%20TP%202_fichiers/script.js"></script>     
+    
+</body></html>

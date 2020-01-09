@@ -1,0 +1,19 @@
+body{
+    background-color: #556272;
+}
+h1{
+    font-style: italic;
+    border-width:10px;
+    border-style: double;
+    border-color: #ffb251;
+}
+ul{
+    list-style: none;
+}
+label, h3, h1, p{
+    color: white;
+}
+header{
+    background-size: cover;
+}
+
